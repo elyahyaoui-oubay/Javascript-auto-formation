@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Séquences d'échappement JavaScript</h2>
+    <script>
+        var str2 = "C:\Users\Downloads";
+    document.write(str2 + "<br>"); // Prints C:UsersDownloads
+     
+    var str3 = "C:\\Users\\Downloads";
+    document.write(str3); // Prints C:\Users\Downloads
+    </script>
+
+<h2>Obtenir la longueur d'une chaîne</h2>
+    <script>
+        var str1 = "This is a paragraph of text.";
+        document.write(str1.length + "<br>"); // Prints 28
+     
+        var str2 = "This is a \n paragraph of text.";
+        document.write(str2.length); // Prints 30, because \n is only one character
+    </script>
+
+<h2>Trouver une chaîne dans une autre chaîne</h2>
+    <!--indexOf  -->
+    <script>
+        var str = "If the facts don't fit the theory, change the facts.";
+        var pos = str.indexOf("facts");
+        document.write(pos); // 0utputs: 7
+    </script>
+
+<h2>Recherche d'un motif à l'intérieur d'une chaîne</h2>
+    <!-- search -->
+    <script>
+        var str = "Color red looks brighter than color blue.";
+ 
+    // Case sensitive search
+        var pos1 = str.search("color");
+        document.write(pos1 + "<br>"); // 0utputs: 3
+    </script>
+    
+    <script>
+        var str = "The quick brown fox jumps over the lazy dog.";
+        var subStr = str.slice(4, 15);
+        document.write(subStr); // Prints: quick brown
+    </script>
+
+<h2>Extraire une sous-chaîne d'une chaîne</h2>
+    <script>
+        var str = "The quick brown fox jumps over the lazy dog.";
+        document.write(str.slice(-28, -19) + "<br>"); // Prints: fox jumps
+        document.write(str.slice(31)); // Prints: the lazy dog.
+    </script>
+
+<h2></h2>
+    <script>
+    var str = "The quick brown fox jumps over the lazy dog.";
+    document.write(str.substring(4, 15) + "<br>"); // Prints: quick brown
+    document.write(str.substring(9, 0) + "<br>"); // Prints: The quick
+    document.write(str.substring(-28, -19) + "<br>"); // Prints nothing
+    document.write(str.substring(31)); // Prints: the lazy dog.
+    </script>
+
+<h2>Remplacement du contenu d'une chaîne</h2>
+    <script>
+    var str = "Color red looks brighter than color blue.";
+    var result = str.replace("color", "paint");
+    document.write(result); // 0utputs: Color red looks brighter than paint blue.
+    </script>
+</body>
+</html>
