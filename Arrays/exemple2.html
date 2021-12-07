@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ajout de nouveaux éléments à un tableau</h2>
+    <!-- nouvel élément à la fin d'un tableau, utilisez simplement la "push()" méthode -->
+    <script>
+        var colors = ["Red", "Green", "Blue"]; 
+        colors.push("Yellow");
+         
+        document.write(colors + "<br>"); // Prints: Red,Green,Blue,Yellow
+        document.write(colors.length); // Prints: 4
+    </script>
+
+    <!-- nouvel élément au début d'un tableau, utilisez la "unshift()" méthode -->
+    <script>
+        var colors = ["Red", "Green", "Blue"]; 
+        colors.unshift("Yellow");
+         
+        document.write(colors + "<br>"); // Prints: Yellow,Red,Green,Blue
+        document.write(colors.length); // Prints: 4
+    </script>
+
+    <h2>Suppression d'éléments d'un tableau</h2>
+    <!-- Pour supprimer le dernier élément d'un tableau, vous pouvez utiliser la "pop()" méthode -->
+    <script>
+        var colors = [ "Red", "Green", "Blue", "Orange"];
+        var last = colors.pop();
+         
+        document.write(last + "<br>"); // Prints: Blue
+        document.write(colors.length); // Prints: 2
+    </script>
+</body>
+</html>
