@@ -8,18 +8,25 @@
 </head>
 <body>
     <script>
-        var lisNumber = [];
-        var lisLengh = 10 ;
-      for (var i = 0;  i <= lisLengh ; i++){
-          var userinput = prompt("entre : ");
-          lisNumber[i]= userinput
-     }
-      for (var i = 0 ;i <= lisLengh ; i++){
-          if(lisNumber[i]<5){
-            alert (lisNumber[i])
-          }
+        //declaration de variable
+        var listNombre;
+        var nombre;
+        var userInpute;
 
-     }
+        //saisir
+        listNombre =[];
+        nombre = 5;
+
+        //traitment
+        for( i=0 ; i<=nombre ; i++ ){
+              userInpute = parseInt(prompt('Entrer :'));
+              listNombre[i] = userInpute;
+        }
+        for( i=0 ; i<=nombre ; i++ ){
+            if (listNombre[i] != 0 ){
+                alert(listNombre[i])
+            }
+        }
     </script>
 </body>
 </html>

@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Creating Arrays in JavaScript</title>
 </head>
 <body>
-    <h2>Ajout de nouveaux éléments à un tableau</h2>
-    <!-- nouvel élément à la fin d'un tableau, utilisez simplement la "push()" méthode -->
     <script>
-        var colors = ["Red", "Green", "Blue"]; 
-        colors.push("Yellow");
-         
-        document.write(colors + "<br>"); // Prints: Red,Green,Blue,Yellow
-        document.write(colors.length); // Prints: 4
+    // Creating variables
+    var colors = ["Red", "Green", "Blue"]; 
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+    var cities = ["London", "Paris", "New York"];
+    var person = ["John", "Wick", 32];
+    
+    // Printing variable values
+    document.write(colors + "<br>");
+    document.write(fruits + "<br>");
+    document.write(cities + "<br>");
+    document.write(person);
     </script>
 
-    <!-- nouvel élément au début d'un tableau, utilisez la "unshift()" méthode -->
+    <h2>Accéder aux éléments d'un tableau</h2>
     <script>
-        var colors = ["Red", "Green", "Blue"]; 
-        colors.unshift("Yellow");
-         
-        document.write(colors + "<br>"); // Prints: Yellow,Red,Green,Blue
-        document.write(colors.length); // Prints: 4
+        var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+     
+        document.write(fruits[0] + "<br>"); // Prints: Apple
+        document.write(fruits[1] + "<br>"); // Prints: Banana
+        document.write(fruits[2] + "<br>"); // Prints: Mango
+        document.write(fruits[fruits.length - 1]); // Prints: Papaya
     </script>
 
-    <h2>Suppression d'éléments d'un tableau</h2>
-    <!-- Pour supprimer le dernier élément d'un tableau, vous pouvez utiliser la "pop()" méthode -->
-    <script>
-        var colors = [ "Red", "Green", "Blue", "Orange"];
-        var last = colors.pop();
-         
-        document.write(last + "<br>"); // Prints: Blue
-        document.write(colors.length); // Prints: 2
-    </script>
+        <h2>Obtenir la longueur d'un tableau</h2>
+        <!-- La "length" propriété renvoie la longueur d'un tableau -->
+        <script>
+            var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+            document.write(fruits.length); // 0utputs: 5
+        </script>
 </body>
 </html>
