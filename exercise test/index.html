@@ -8,16 +8,18 @@
 </head>
 <body>
     <script>
-        var listNum = [];
-        var listLength = 10;
+        var lisNumber = [];
+        var lisLengh = 10 ;
+      for (var i = 0;  i <= lisLengh ; i++){
+          var userinput = prompt("entre : ");
+          lisNumber[i]= userinput
+     }
+      for (var i = 0 ;i <= lisLengh ; i++){
+          if(lisNumber[i]<5){
+            alert (lisNumber[i])
+          }
 
-        for (var i=0 ; i >= listLength ; i++)
-            var userInput = parseInt (prompt ("entrée"));
-            listNum[i] = userInput;
-
-        for (var i = 0 ; i = listLength ; i++){
-            alert (listNum[i]);
-        }
+     }
     </script>
 </body>
 </html>
