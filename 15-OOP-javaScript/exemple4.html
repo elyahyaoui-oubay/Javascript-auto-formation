@@ -10,21 +10,23 @@
 
 <body>
     <script>
-         //declaration
+        //declaration
         class Student {
             constructor(firstName, lastName) {
                 this.firstName = firstName;
                 this.lastName = lastName;
                 
             }
-            //traitement.nom complet
+        //traitement.nom complet
             fullName() {
               var _fullName =  `I'm ${this.firstName}, ${this.lastName}` ;
               return _fullName
             }
         }
+
         //saiser 
-        const s1 = new Student('boutaina', 'lharrak');
+        const s1 = new Student('Oubay', 'El Yahyaoui');
+
         //affichage
         console.log(s1.fullName());
 
