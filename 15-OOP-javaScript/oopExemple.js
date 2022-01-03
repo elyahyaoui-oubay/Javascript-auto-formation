@@ -30,6 +30,6 @@ class Person {
 
 
     display() {
-        console.log("I am " + this._name + " my age is " + this._age + " my gender is " + this._gender)
+        document.write("I am " + this._name + " my age is " + this._age + " my gender is " + this._gender)
     }
 }
