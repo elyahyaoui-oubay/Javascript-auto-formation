@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-16 01:29:52 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC0xR1ZQVVYzOzIwMjEtMTItMTY7IjEyOjE2OjMzICI7MzEyNw=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC0xR1ZQVVYzOzIwMjEtMTItMTY7IjAxOjI5OjUyICI7MTszMjM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="trouv&#233;" type="Boolean" array="False" size=""/>
+            <assign variable="trouv&#233;" expression="false"/>
+            <declare name="listNombre" type="Integer" array="True" size="5"/>
+            <assign variable="listNombre[0]" expression="10"/>
+            <assign variable="listNombre[1]" expression="50"/>
+            <assign variable="listNombre[2]" expression="75"/>
+            <assign variable="listNombre[3]" expression="100"/>
+            <assign variable="listNombre[4]" expression="25"/>
+            <declare name="entr&#233;eUtilisateur" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <input variable="entr&#233;eUtilisateur"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="entr&#233;eUtilisateur = listNombre[i]">
+                    <then>
+                        <assign variable="trouv&#233;" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="trouv&#233;">
+                <then>
+                    <output expression="&quot;&#231;'est &#231;a le nombre&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#231;'est ne pas le nombre&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

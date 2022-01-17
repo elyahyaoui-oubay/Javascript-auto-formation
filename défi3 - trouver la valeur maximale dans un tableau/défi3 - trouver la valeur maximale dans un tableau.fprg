@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-17 10:49:41 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC0xR1ZQVVYzOzIwMjEtMTItMTc7IjEwOjI1OjIyICI7MzEyNA=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC0xR1ZQVVYzOzIwMjEtMTItMTc7IjEwOjQ5OjQxICI7MTszMjM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="maximaleNombre" type="Integer" array="False" size=""/>
+            <declare name="listNombre" type="Integer" array="True" size="10"/>
+            <assign variable="listNombre[0]" expression="25"/>
+            <assign variable="listNombre[1]" expression="50"/>
+            <assign variable="listNombre[2]" expression="75"/>
+            <assign variable="listNombre[3]" expression="100"/>
+            <assign variable="listNombre[4]" expression="120"/>
+            <assign variable="listNombre[5]" expression="140"/>
+            <assign variable="listNombre[6]" expression="160"/>
+            <assign variable="listNombre[7]" expression="180"/>
+            <assign variable="listNombre[8]" expression="200"/>
+            <assign variable="listNombre[9]" expression="1"/>
+            <assign variable="maximaleNombre" expression="listNombre[0]"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="listNombre[i]&gt;= maximaleNombre">
+                    <then>
+                        <assign variable="maximaleNombre" expression="listNombre[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Le maximale nombre est :&quot; &amp;maximaleNombre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

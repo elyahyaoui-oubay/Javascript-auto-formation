@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // declaration des variables
+        var maximaleNombre;
+        var listNombre;
+
+        // saisie
+        listNombre = [25, 50, 75, 100, 120, 140, 160, 180, 200, 1];
+
+        // traitement
+        maximaleNombre = listNombre[0];
+
+        for(i = 0; i <= listNombre.length; i++){
+            if(listNombre[i] >= maximaleNombre){
+                maximaleNombre = listNombre[i];
+            }
+        }
+        document.write("le maximale nombre est:" + maximaleNombre + "position :" + listNombre.indexOf(maximaleNombre));
+    </script>
+</body>
+</html>
