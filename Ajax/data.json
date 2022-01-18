@@ -10,6 +10,11 @@
     {
         "make": "Tesla",
         "model": "Model S"
+    },
+
+    {
+        "make": "Mercedes",
+        "model":"Class a"
     }
 
 ]
